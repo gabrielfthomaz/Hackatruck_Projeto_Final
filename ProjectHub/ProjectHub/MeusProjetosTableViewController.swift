@@ -2,7 +2,7 @@
 //  MeusProjetosTableViewController.swift
 //  ProjectHub
 //
-//  Created by Student on 25/08/22.
+//  Created by Student on 30/08/22.
 //  Copyright © 2022 Student. All rights reserved.
 //
 
@@ -12,28 +12,20 @@ class MeusProjetosTableViewController: UITableViewController {
      lazy var faButton: UIButton = {
             let button = UIButton(frame: .zero)
             button.translatesAutoresizingMaskIntoConstraints = false
-            
-        //button.backgroundColor = .black
-        
         button.setImage(UIImage(systemName: "plus.circle.fill"), for: .normal)
         button.setPreferredSymbolConfiguration(.init(pointSize: 60), forImageIn: .normal)
         
-        //button.titleLabel?.font = UIFont.systemFont(ofSize: 70)
-        
-        //button.setTitle("+", for: .normal)
-        //button.titleLabel?.font = button.titleLabel?.font.withSize(70)
-        //button.titleLabel?.shadowOffset = CGSize(width: 5, height: 5)
             button.addTarget(self, action: #selector(fabTapped(_:)), for: .touchUpInside)
             return button
         }()
     
-    var meusProjetos = [MeusProjetosAPI]()
+    var meusProjetos = [DestaquesAPI]()
 
         override func viewDidLoad() {
             super.viewDidLoad()
             downloadJSON {
                 self.tableView.reloadData()
-                print("sucess")
+                print("success")
             }
         }
 
@@ -62,8 +54,8 @@ class MeusProjetosTableViewController: UITableViewController {
                 ])
             faButton.layer.cornerRadius = 40
             faButton.layer.masksToBounds = true
-            faButton.layer.borderColor = UIColor.white.cgColor
-            faButton.layer.borderWidth = 1
+            //faButton.layer.borderColor = UIColor.white.cgColor
+            //faButton.layer.borderWidth = 1
         }
         @objc func pushGameViewController() {
             let destinationVC = storyboard?.instantiateViewController(withIdentifier: "CadastroProjeto") as! CadastroProjetoViewController
@@ -92,13 +84,13 @@ class MeusProjetosTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "projetos", for: indexPath)
 
           if let projetosCell = cell as? MeusProjetosTableViewCell {
                    let projetoArray = meusProjetos[indexPath.row]
                    projetosCell.meuTitulo.text = projetoArray.titulo
                    projetosCell.meuDescricao.text = projetoArray.breveDescricao
-                   projetosCell.meuDataDescricao.text = projetoArray.autor
+            projetosCell.meuDataDescricao.text = projetoArray.dataDeCriacao
                    
                    return projetosCell
                }
@@ -123,7 +115,7 @@ class MeusProjetosTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -152,9 +144,24 @@ class MeusProjetosTableViewController: UITableViewController {
     }
     */
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           
+           if segue.identifier == "descricaoSegue2"{
+                      if let novaView = segue.destination as? DescricaoViewController {
+                          let celulaSelecionada = tableView.indexPathForSelectedRow?.row
+                          let destaqueDaCelula = meusProjetos[celulaSelecionada!]
+                          novaView.destaqueaux = destaqueDaCelula
+                      }
+                  }
+           
+       }
+    
+    
+    
     func downloadJSON(completed: @escaping () -> ()){
         
-        let url = URL(string: "https://noderedaluno09202202.kgsx7kocpw2.us-south.codeengine.appdomain.cloud/lerPostMeusProjetos")
+        let url = URL(string: "https://noderedaluno09202202.kgsx7kocpw2.us-south.codeengine.appdomain.cloud/lerPostDestaque")
         
         URLSession.shared.dataTask(with: url!) { data, response, err in
             
@@ -162,7 +169,7 @@ class MeusProjetosTableViewController: UITableViewController {
                 
                 do{
                     
-                    self.meusProjetos = try JSONDecoder().decode([MeusProjetosAPI].self, from: data!)
+                    self.meusProjetos = try JSONDecoder().decode([DestaquesAPI].self, from: data!)
                     
                     DispatchQueue.main.async {
                         completed()

@@ -2,20 +2,20 @@
 //  MeusProjetosTableViewCell.swift
 //  ProjectHub
 //
-//  Created by Student on 25/08/22.
+//  Created by Student on 30/08/22.
 //  Copyright © 2022 Student. All rights reserved.
 //
 
 import UIKit
 
 class MeusProjetosTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var meuTitulo: UILabel!
     
     @IBOutlet weak var meuDescricao: UILabel!
     
     @IBOutlet weak var meuDataDescricao: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,32 +9,33 @@
 /* Begin PBXBuildFile section */
 		3F2316A528B9370200947307 /* Destaques.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2316A428B9370200947307 /* Destaques.swift */; };
 		3F2316A728B94F7800947307 /* MeusProjetos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2316A628B94F7800947307 /* MeusProjetos.swift */; };
-		3F4E609728B7E690006CA642 /* MeusProjetosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E609628B7E690006CA642 /* MeusProjetosTableViewController.swift */; };
 		3F4E609928B7E819006CA642 /* MeuPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E609828B7E819006CA642 /* MeuPerfilViewController.swift */; };
 		3F4E609B28B7E8A0006CA642 /* CadastroProjetoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E609A28B7E8A0006CA642 /* CadastroProjetoViewController.swift */; };
 		3F4E609D28B7FA2F006CA642 /* DescricaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E609C28B7FA2F006CA642 /* DescricaoViewController.swift */; };
 		3F4E609F28B7FA7C006CA642 /* TelaInicialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E609E28B7FA7C006CA642 /* TelaInicialTableViewCell.swift */; };
-		3F4E60A128B7FAB9006CA642 /* MeusProjetosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E60A028B7FAB9006CA642 /* MeusProjetosTableViewCell.swift */; };
+		3F80A9C128BE7CD300971AA3 /* ContribuicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80A9C028BE7CD300971AA3 /* ContribuicaoViewController.swift */; };
+		3F80A9C328BE7E3800971AA3 /* Contribuicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80A9C228BE7E3800971AA3 /* Contribuicao.swift */; };
+		3F80A9C528BE7E7900971AA3 /* ContribuirCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80A9C428BE7E7900971AA3 /* ContribuirCollectionViewCell.swift */; };
 		3F8AB2F528B7D8CD00B99ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AB2F428B7D8CD00B99ED4 /* AppDelegate.swift */; };
 		3F8AB2F728B7D8CD00B99ED4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AB2F628B7D8CD00B99ED4 /* SceneDelegate.swift */; };
 		3F8AB2FC28B7D8CD00B99ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8AB2FA28B7D8CD00B99ED4 /* Main.storyboard */; };
 		3F8AB2FE28B7D8CE00B99ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8AB2FD28B7D8CE00B99ED4 /* Assets.xcassets */; };
 		3F8AB30128B7D8CE00B99ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8AB2FF28B7D8CE00B99ED4 /* LaunchScreen.storyboard */; };
 		3F8AB30F28B7DEE600B99ED4 /* TelaInicialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8AB30E28B7DEE600B99ED4 /* TelaInicialTableViewController.swift */; };
-		3FDD386028BD4E570018A2ED /* ContribuicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD385F28BD4E570018A2ED /* ContribuicaoViewController.swift */; };
-		3FDD386228BD4E7C0018A2ED /* Contribuicoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD386128BD4E7C0018A2ED /* Contribuicoes.swift */; };
-		3FDD386428BD4EFA0018A2ED /* ContribuicoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD386328BD4EFA0018A2ED /* ContribuicoesCollectionViewCell.swift */; };
+		3FD3F34228BE99C600F68CC6 /* MeusProjetosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3F34128BE99C600F68CC6 /* MeusProjetosTableViewController.swift */; };
+		3FD3F34428BE99EF00F68CC6 /* MeusProjetosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3F34328BE99EF00F68CC6 /* MeusProjetosTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F2316A428B9370200947307 /* Destaques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destaques.swift; sourceTree = "<group>"; };
 		3F2316A628B94F7800947307 /* MeusProjetos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusProjetos.swift; sourceTree = "<group>"; };
-		3F4E609628B7E690006CA642 /* MeusProjetosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusProjetosTableViewController.swift; sourceTree = "<group>"; };
 		3F4E609828B7E819006CA642 /* MeuPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPerfilViewController.swift; sourceTree = "<group>"; };
 		3F4E609A28B7E8A0006CA642 /* CadastroProjetoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroProjetoViewController.swift; sourceTree = "<group>"; };
 		3F4E609C28B7FA2F006CA642 /* DescricaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescricaoViewController.swift; sourceTree = "<group>"; };
 		3F4E609E28B7FA7C006CA642 /* TelaInicialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialTableViewCell.swift; sourceTree = "<group>"; };
-		3F4E60A028B7FAB9006CA642 /* MeusProjetosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusProjetosTableViewCell.swift; sourceTree = "<group>"; };
+		3F80A9C028BE7CD300971AA3 /* ContribuicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContribuicaoViewController.swift; sourceTree = "<group>"; };
+		3F80A9C228BE7E3800971AA3 /* Contribuicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribuicao.swift; sourceTree = "<group>"; };
+		3F80A9C428BE7E7900971AA3 /* ContribuirCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContribuirCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F8AB2F128B7D8CD00B99ED4 /* ProjectHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8AB2F428B7D8CD00B99ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8AB2F628B7D8CD00B99ED4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +44,8 @@
 		3F8AB30028B7D8CE00B99ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8AB30228B7D8CE00B99ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8AB30E28B7DEE600B99ED4 /* TelaInicialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialTableViewController.swift; sourceTree = "<group>"; };
-		3FDD385F28BD4E570018A2ED /* ContribuicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContribuicaoViewController.swift; sourceTree = "<group>"; };
-		3FDD386128BD4E7C0018A2ED /* Contribuicoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribuicoes.swift; sourceTree = "<group>"; };
-		3FDD386328BD4EFA0018A2ED /* ContribuicoesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContribuicoesCollectionViewCell.swift; sourceTree = "<group>"; };
+		3FD3F34128BE99C600F68CC6 /* MeusProjetosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusProjetosTableViewController.swift; sourceTree = "<group>"; };
+		3FD3F34328BE99EF00F68CC6 /* MeusProjetosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusProjetosTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,21 +78,21 @@
 		3F8AB2F328B7D8CD00B99ED4 /* ProjectHub */ = {
 			isa = PBXGroup;
 			children = (
+				3FD3F34128BE99C600F68CC6 /* MeusProjetosTableViewController.swift */,
+				3FD3F34328BE99EF00F68CC6 /* MeusProjetosTableViewCell.swift */,
 				3F8AB30E28B7DEE600B99ED4 /* TelaInicialTableViewController.swift */,
 				3F4E609C28B7FA2F006CA642 /* DescricaoViewController.swift */,
 				3F2316A428B9370200947307 /* Destaques.swift */,
 				3F4E609E28B7FA7C006CA642 /* TelaInicialTableViewCell.swift */,
-				3F4E60A028B7FAB9006CA642 /* MeusProjetosTableViewCell.swift */,
 				3F8AB2F428B7D8CD00B99ED4 /* AppDelegate.swift */,
 				3F8AB2F628B7D8CD00B99ED4 /* SceneDelegate.swift */,
 				3F8AB2FA28B7D8CD00B99ED4 /* Main.storyboard */,
-				3FDD386328BD4EFA0018A2ED /* ContribuicoesCollectionViewCell.swift */,
-				3FDD386128BD4E7C0018A2ED /* Contribuicoes.swift */,
-				3FDD385F28BD4E570018A2ED /* ContribuicaoViewController.swift */,
+				3F80A9C228BE7E3800971AA3 /* Contribuicao.swift */,
+				3F80A9C028BE7CD300971AA3 /* ContribuicaoViewController.swift */,
+				3F80A9C428BE7E7900971AA3 /* ContribuirCollectionViewCell.swift */,
 				3F2316A628B94F7800947307 /* MeusProjetos.swift */,
 				3F4E609A28B7E8A0006CA642 /* CadastroProjetoViewController.swift */,
 				3F4E609828B7E819006CA642 /* MeuPerfilViewController.swift */,
-				3F4E609628B7E690006CA642 /* MeusProjetosTableViewController.swift */,
 				3F8AB2FD28B7D8CE00B99ED4 /* Assets.xcassets */,
 				3F8AB2FF28B7D8CE00B99ED4 /* LaunchScreen.storyboard */,
 				3F8AB30228B7D8CE00B99ED4 /* Info.plist */,
@@ -171,20 +171,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDD386228BD4E7C0018A2ED /* Contribuicoes.swift in Sources */,
 				3F8AB30F28B7DEE600B99ED4 /* TelaInicialTableViewController.swift in Sources */,
-				3FDD386428BD4EFA0018A2ED /* ContribuicoesCollectionViewCell.swift in Sources */,
 				3F4E609D28B7FA2F006CA642 /* DescricaoViewController.swift in Sources */,
 				3F4E609928B7E819006CA642 /* MeuPerfilViewController.swift in Sources */,
+				3FD3F34428BE99EF00F68CC6 /* MeusProjetosTableViewCell.swift in Sources */,
 				3F4E609F28B7FA7C006CA642 /* TelaInicialTableViewCell.swift in Sources */,
 				3F8AB2F528B7D8CD00B99ED4 /* AppDelegate.swift in Sources */,
 				3F2316A528B9370200947307 /* Destaques.swift in Sources */,
 				3F4E609B28B7E8A0006CA642 /* CadastroProjetoViewController.swift in Sources */,
+				3FD3F34228BE99C600F68CC6 /* MeusProjetosTableViewController.swift in Sources */,
 				3F8AB2F728B7D8CD00B99ED4 /* SceneDelegate.swift in Sources */,
-				3FDD386028BD4E570018A2ED /* ContribuicaoViewController.swift in Sources */,
-				3F4E60A128B7FAB9006CA642 /* MeusProjetosTableViewCell.swift in Sources */,
-				3F4E609728B7E690006CA642 /* MeusProjetosTableViewController.swift in Sources */,
+				3F80A9C328BE7E3800971AA3 /* Contribuicao.swift in Sources */,
+				3F80A9C128BE7CD300971AA3 /* ContribuicaoViewController.swift in Sources */,
 				3F2316A728B94F7800947307 /* MeusProjetos.swift in Sources */,
+				3F80A9C528BE7E7900971AA3 /* ContribuirCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

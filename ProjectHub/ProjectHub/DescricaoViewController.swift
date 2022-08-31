@@ -12,6 +12,7 @@ class DescricaoViewController: UIViewController {
     
     var destaqueaux: DestaquesAPI?
     
+    
     @IBOutlet weak var tituloDescricao: UILabel!
     
     @IBOutlet weak var descricaoCompletaDescricao: UILabel!
@@ -50,14 +51,20 @@ class DescricaoViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "descricaoParaContribuir"{
+            if segue.destination is ContribuicaoViewController{
+                
+            }
+            
+        }
+        
     }
-    */
+    
 
 }

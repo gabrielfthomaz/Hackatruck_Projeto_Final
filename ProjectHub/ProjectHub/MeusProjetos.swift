@@ -41,8 +41,7 @@ class MeusProjetos {
         self.autor = json["autor"] as? String ?? ""
         self.descricaoCompleta = json["descricaoCompleta"] as? String ?? ""
         self.contato = json["contato"] as? String ?? ""
-        self.email
-            = json["email"] as? String ?? ""
+        self.email = json["email"] as? String ?? ""
         self.dataDeCriacao = json["dataDeCriacao"] as? String ?? ""
         self.contribuidores = json["contribuidores"] as? String ?? ""
         self.estagioDoProjeto = json["estagioDoProjeto"] as? String ?? ""
